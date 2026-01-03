@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>American Association of Accountants | Premium Certification & Membership</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <!-- Top Bar -->
+    <div class="topbar">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="topbar-info">
+                <span><i class="fa-solid fa-phone me-2"></i> +1 (800) AAA-CONT</span>
+                <span class="ms-4"><i class="fa-solid fa-envelope me-2"></i> contact@aaaccountants.org</span>
+            </div>
+            <div class="topbar-links">
+                <a href="#" class="text-white me-3">Member Login</a>
+                <a href="#" class="topbar_link">Certification Verification <i class="fa-solid fa-arrow-right-long ms-1"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">AAA<span>.</span></a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Certifications</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Membership</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Resources</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Events</a></li>
+                </ul>
+                <div class="nav-btns d-flex gap-3">
+                    <a href="#" class="btn-premium btn-outline-gold" data-bs-toggle="modal" data-bs-target="#membershipModal">Apply Now</a>
+                    <a href="#" class="btn-premium btn-gold" data-bs-toggle="modal" data-bs-target="#membershipModal">Join Today</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero-area">
+        <div class="container">
+            <div class="hero-content" data-aos="fade-up">
+                <h1>Elevating the Standards of <span>Accounting Excellence</span></h1>
+                <p>Join the premier global community of accounting professionals. Gain world-class certifications, access exclusive resources, and advance your career with the American Association of Accountants.</p>
+                <div class="hero-btns d-flex justify-content-center gap-4">
+                    <a href="#certifications" class="btn-premium btn-gold">Explore Certifications</a>
+                    <a href="#" class="btn-premium btn-outline-gold" data-bs-toggle="modal" data-bs-target="#membershipModal">Become a Member</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <div class="container">
+        <div class="stats-container row g-0">
+            <div class="col-md-3 stat-item">
+                <h3>50K+</h3>
+                <p>Global Members</p>
+            </div>
+            <div class="col-md-3 stat-item">
+                <h3>120+</h3>
+                <p>Countries Represented</p>
+            </div>
+            <div class="col-md-3 stat-item">
+                <h3>15+</h3>
+                <p>Professional Certs</p>
+            </div>
+            <div class="col-md-3 stat-item">
+                <h3>100+</h3>
+                <p>Annual Events</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="section-title text-start mb-4">
+                        <h2>Defining the Future of <br>Accounting Since 1916</h2>
+                    </div>
+                    <p class="lead mb-4">The American Association of Accountants is the largest community of accountants in academia and professional practice.</p>
+                    <p class="mb-4">Founded on the principles of integrity, excellence, and continuous learning, we provide the platform for accounting professionals to connect, grow, and lead in an ever-evolving financial landscape.</p>
+                    <ul class="mb-5">
+                        <li class="mb-2"><i class="fa-solid fa-check text-gold me-2"></i> World-class research and publications</li>
+                        <li class="mb-2"><i class="fa-solid fa-check text-gold me-2"></i> Global networking opportunities</li>
+                        <li class="mb-2"><i class="fa-solid fa-check text-gold me-2"></i> Industry-leading certification programs</li>
+                    </ul>
+                    <a href="#" class="btn-premium btn-gold">Learn More About AAA</a>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-image ms-lg-5">
+                        <img src="https://images.unsplash.com/photo-1577412647305-991150c7d163?q=80&w=2070&auto=format&fit=crop" class="img-fluid" alt="About AAA">
+                        <div class="about-badge">
+                            <span>100+ Years</span>
+                            <p class="mb-0">of Excellence</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications">
+        <div class="container">
+            <div class="section-title">
+                <h2>Professional Certifications</h2>
+                <p>Advance your career with our globally recognized credentials.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="cert-card">
+                        <div class="cert-icon"><i class="fa-solid fa-award"></i></div>
+                        <h3>Certified Public <br>Accountant (CPA)</h3>
+                        <p>The gold standard in accounting. Master complex financial regulations and elevate your professional status.</p>
+                        <a href="#" class="cert-link">View Program Details <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="cert-card">
+                        <div class="cert-icon"><i class="fa-solid fa-chart-line"></i></div>
+                        <h3>Certified Management <br>Accountant (CMA)</h3>
+                        <p>Bridge the gap between accounting and strategic management. Drive business performance through financial insight.</p>
+                        <a href="#" class="cert-link">View Program Details <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="cert-card">
+                        <div class="cert-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                        <h3>Certified Internal <br>Auditor (CIA)</h3>
+                        <p>Become a trusted advisor. Master internal control and risk management in the modern corporate environment.</p>
+                        <a href="#" class="cert-link">View Program Details <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="#" class="btn-premium btn-outline-gold">Explore All Certifications</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="why-choose-us">
+        <div class="container">
+            <div class="section-title">
+                <h2>Why Choose AAA?</h2>
+                <p>Equipping you with the tools to excel in the global accounting arena.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="why-card">
+                        <div class="why-icon"><i class="fa-solid fa-earth-americas"></i></div>
+                        <h4>Global Recognition</h4>
+                        <p>Our credentials are respected by top firms and universities worldwide.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="why-card">
+                        <div class="why-icon"><i class="fa-solid fa-lightbulb"></i></div>
+                        <h4>Expert Insights</h4>
+                        <p>Access cutting-edge research and journals from leading academics.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="why-card">
+                        <div class="why-icon"><i class="fa-solid fa-users"></i></div>
+                        <h4>Rich Network</h4>
+                        <p>Join a community of 50,000+ passionate accounting professionals.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="why-card">
+                        <div class="why-icon"><i class="fa-solid fa-rocket"></i></div>
+                        <h4>Career Growth</h4>
+                        <p>Personalized tools and advocacy to fast-track your professional journey.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Membership Section -->
+    <section id="membership">
+        <div class="container">
+            <div class="section-title">
+                <h2>Membership Community</h2>
+                <p>Connect with over 50,000 professionals globally.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="member-card">
+                        <h3>Academic</h3>
+                        <div class="member-price">$195 <span>/ year</span></div>
+                        <ul class="member-features">
+                            <li><i class="fa-solid fa-circle-check"></i> 17 Journal Subscriptions</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Academic Placement Service</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Section/Region Memberships</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Annual Meeting Discount</li>
+                        </ul>
+                        <a href="./membership.html" class="btn-premium btn-outline-gold w-100 mt-4">Join as Faculty</a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="member-card" style="border-color: var(--accent-gold);">
+                        <h3>Professional</h3>
+                        <div class="member-price">$295 <span>/ year</span></div>
+                        <ul class="member-features">
+                            <li><i class="fa-solid fa-circle-check"></i> All Journal Access</li>
+                            <li><i class="fa-solid fa-circle-check"></i> CPE Credit Hub</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Executive Networking</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Career Advocacy Tools</li>
+                        </ul>
+                        <a href="./membership.html" class="btn-premium btn-gold w-100 mt-4">Join as Professional</a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="member-card">
+                        <h3>Student</h3>
+                        <div class="member-price">$50 <span>/ year</span></div>
+                        <ul class="member-features">
+                            <li><i class="fa-solid fa-circle-check"></i> Career Center Access</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Scholarship Opportunities</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Digital Publications</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Student Competitions</li>
+                        </ul>
+                        <a href="./membership.html" class="btn-premium btn-outline-gold w-100 mt-4">Join as Student</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Insights Section -->
+    <section id="insights">
+        <div class="container">
+            <div class="section-title">
+                <h2>Professional Insights</h2>
+                <p>Stay informed with the latest research and industry updates.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="news-card">
+                        <div class="news-img" style="background-image: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop');"></div>
+                        <div class="news-content">
+                            <span class="news-date">January 15, 2026</span>
+                            <h4>The Impact of AI on Auditing Standards: A 2026 Perspective</h4>
+                            <a href="./report-details.html" class="cert-link">Read Full Report <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="news-card">
+                        <div class="news-img" style="background-image: url('https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?q=80&w=2070&auto=format&fit=crop');"></div>
+                        <div class="news-content">
+                            <span class="news-date">January 12, 2026</span>
+                            <h4>ESG Reporting: New Regulations for Global Corporations</h4>
+                            <a href="./report-details.html" class="cert-link">Read Full Report <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="news-card">
+                        <div class="news-img" style="background-image: url('https://images.unsplash.com/photo-1454165833767-027eeef1596e?q=80&w=2070&auto=format&fit=crop');"></div>
+                        <div class="news-content">
+                            <span class="news-date">January 10, 2026</span>
+                            <h4>Future-Proofing Your Accounting Career in the Digital Age</h4>
+                            <a href="./report-details.html" class="cert-link">Read Full Report <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <div class="cta-section">
+        <div class="container">
+            <div class="cta-container text-center">
+                <h2>Ready to Elevate Your Career?</h2>
+                <p class="lead mb-5 opacity-75">Join thousands of successful professionals who have transformed their careers with the American Association of Accountants.</p>
+                <div class="d-flex justify-content-center gap-4">
+                    <a href="#" class="btn-premium btn-gold" data-bs-toggle="modal" data-bs-target="#membershipModal">Get Started Now</a>
+                    <a href="#" class="btn-premium btn-outline-gold text-white" data-bs-toggle="modal" data-bs-target="#contactModal">Contact Admissions</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <a href="#" class="footer-logo">AAA<span>.</span></a>
+                    <p class="text-muted pe-lg-5">The American Association of Accountants is dedicated to being the premier community for thought leaders in accounting.</p>
+                    <div class="social-links d-flex gap-3 mt-4">
+                        <a href="#" class="btn-premium btn-outline-gold p-2 rounded-circle" style="width: 40px; height: 40px;"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" class="btn-premium btn-outline-gold p-2 rounded-circle" style="width: 40px; height: 40px;"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="btn-premium btn-outline-gold p-2 rounded-circle" style="width: 40px; height: 40px;"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 footer-links">
+                    <h5>Association</h5>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Leadership</a></li>
+                        <li><a href="#">Global Reach</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 footer-links">
+                    <h5>Professional Hub</h5>
+                    <ul>
+                        <li><a href="#">Certification Programs</a></li>
+                        <li><a href="#">Membership Tiers</a></li>
+                        <li><a href="#">Research & Journals</a></li>
+                        <li><a href="#">Continuing Education</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 footer-links">
+                    <h5>Newsletter</h5>
+                    <p class="text-muted small mb-4">Subscribe to get the latest insights and updates.</p>
+                    <div class="input-group">
+                        <input type="text" class="form-control bg-transparent border-secondary text-white" placeholder="Email address">
+                        <button class="btn btn-gold" type="button">Join</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom text-center">
+                <p>&copy; 2026 American Association of Accountants. All Rights Reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Membership Modal -->
+    <div class="modal fade" id="membershipModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content border-0 rounded-4 overflow-hidden">
+                <div class="modal-header bg-navy text-white p-4 border-0">
+                    <h5 class="modal-title fw-bold">Member Application</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-5">
+                    <form class="row g-4">
+                        <div class="col-md-6">
+                            <label class="form-label-premium">Full Name</label>
+                            <input type="text" class="form-control form-control-premium" placeholder="e.g. John Doe">
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label-premium">Email Address</label>
+                            <input type="email" class="form-control form-control-premium" placeholder="e.g. john@example.com">
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label-premium">Membership Tier</label>
+                            <select class="form-select form-control-premium">
+                                <option selected>Select a Tier</option>
+                                <option value="academic">Academic ($195)</option>
+                                <option value="professional">Professional ($295)</option>
+                                <option value="student">Student ($50)</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label-premium">Professional Title</label>
+                            <input type="text" class="form-control form-control-premium" placeholder="e.g. Senior Auditor">
+                        </div>
+                        <div class="col-md-12">
+                            <label class="form-label-premium">Organization / University</label>
+                            <input type="text" class="form-control form-control-premium" placeholder="Enter your current affiliation">
+                        </div>
+                        <div class="col-md-12 mt-5">
+                            <button type="submit" class="btn-premium btn-gold w-100 py-3 fs-6">Submit Application</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Admissions Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0 rounded-4 overflow-hidden">
+                <div class="modal-header bg-navy text-white p-4 border-0">
+                    <h5 class="modal-title fw-bold">Contact Admissions</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-5">
+                    <form class="row g-4">
+                        <div class="col-12">
+                            <label class="form-label-premium">Full Name</label>
+                            <input type="text" class="form-control form-control-premium" placeholder="Your Name">
+                        </div>
+                        <div class="col-12">
+                            <label class="form-label-premium">Email Address</label>
+                            <input type="email" class="form-control form-control-premium" placeholder="your@email.com">
+                        </div>
+                        <div class="col-12">
+                            <label class="form-label-premium">Subject</label>
+                            <select class="form-select form-control-premium">
+                                <option selected>Select inquiry type</option>
+                                <option value="cert">Certification Program</option>
+                                <option value="member">Membership Inquiry</option>
+                                <option value="event">Academic Events</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="col-12">
+                            <label class="form-label-premium">Message</label>
+                            <textarea class="form-control form-control-premium py-3" rows="4" placeholder="How can we help you?" style="height: auto;"></textarea>
+                        </div>
+                        <div class="col-12 mt-4">
+                            <button type="submit" class="btn-premium btn-gold w-100 py-3">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="./js/main.js"></script>
+
+</body>
+</html>
