@@ -13,23 +13,27 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Hero Animations
+
     const heroTl = gsap.timeline();
-    heroTl.from('.hero-content h1', {
-        y: 50,
-        opacity: 0,
-        duration: 1,
-        ease: 'power3.out'
-    }).from('.hero-content p', {
-        y: 30,
-        opacity: 0,
-        duration: 1,
-        ease: 'power3.out'
-    }, '-=0.6').from('.hero-btns', {
-        y: 20,
-        opacity: 0,
-        duration: 0.8,
-        ease: 'power3.out'
-    }, '-=0.6');
+    if(document.querySelector('.hero-content h1')){
+
+        heroTl.from('.hero-content h1', {
+            y: 50,
+            opacity: 0,
+            duration: 1,
+            ease: 'power3.out'
+        }).from('.hero-content p', {
+            y: 30,
+            opacity: 0,
+            duration: 1,
+            ease: 'power3.out'
+        }, '-=0.6').from('.hero-btns', {
+            y: 20,
+            opacity: 0,
+            duration: 0.8,
+            ease: 'power3.out'
+        }, '-=0.6');
+    }
 
     // Section Entrance Animations
     const revealSections = document.querySelectorAll('section');
