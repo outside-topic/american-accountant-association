@@ -35,7 +35,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="#">AAA<span>.</span></a>
+            <a class="navbar-brand" href="./index.html">AAA<span>.</span></a>
             
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -43,124 +43,79 @@
             
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Membership</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Insights</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./objective.html">Objectives</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./values.html">Core Values</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="./membership.html">Membership</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Categories
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Associate Member</a></li>
+                            <li><a class="dropdown-item" href="#">Professional Member</a></li>
+                            <li><a class="dropdown-item" href="#">Senior Professional Member</a></li>
+                        </ul>
+                    </li>
                 </ul>
                 <div class="nav-btns d-flex gap-3">
                     <a href="#" class="btn-premium btn-outline-gold" data-bs-toggle="modal" data-bs-target="#membershipModal">Apply Now</a>
-                    <a href="./membership.html" class="btn-premium btn-gold">Join Today</a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <!-- Membership Hero -->
-    <section class="membership-hero text-center py-5" style="background: linear-gradient(rgba(10, 25, 47, 0.9), rgba(10, 25, 47, 0.9)), url('https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=1974&auto=format&fit=crop') no-repeat center center/cover; color: white;">
-        <div class="container py-5">
-            <h1 class="display-3 fw-bold mb-4 text-gold">Invest in Your Professional Future</h1>
-            <p class="lead mx-auto mb-5" style="max-width: 800px;">Join the world's most influential community of accounting professionals. Elevate your career with exclusive resources, elite networking, and globally recognized credentials.</p>
-            <a href="#tiers" class="btn-premium btn-gold btn-lg">View Membership Tiers</a>
+    <!-- Inner Hero -->
+    <section class="inner-hero">
+        <div class="container">
+            <h1 data-aos="fade-up">American Association of Accountants (AAA) Membership</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb justify-content-center bg-transparent">
+                    <li class="breadcrumb-item"><a href="./index.html" class="text-gold">Home</a></li>
+                    <li class="breadcrumb-item active text-white" aria-current="page">Membership</li>
+                </ol>
+            </nav>
         </div>
     </section>
 
-    <!-- Membership Benefits Details -->
-    <section class="benefits-detail py-5">
-        <div class="container py-5">
-            <div class="section-title">
-                <h2>Elite Member Benefits</h2>
-                <p>Everything you need to lead in the modern accounting landscape.</p>
-            </div>
-            <div class="row g-5 mt-4">
-                <div class="col-lg-4 text-center">
-                    <div class="p-4 rounded-4 bg-light h-100 shadow-sm transition-hover">
-                        <i class="fa-solid fa-book-open-reader fs-1 text-gold mb-3"></i>
-                        <h4>Journal Access</h4>
-                        <p class="text-muted">Unrestricted access to all AAA journals, including The Accounting Review and Accounting Horizons.</p>
+    <!-- Definition Section -->
+    <section class="membership-intro-section py-5">
+        <div class="container py-lg-4">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="section-title text-start mb-4">
+                        <span class="text-gold fw-bold text-uppercase letter-spacing-1 mb-2 d-block">Shape Your Career</span>
+                        <h2>What is AAA Membership?</h2>
+                    </div>
+                    <p class="lead mb-4">Membership with the American Association of Accountants (AAA) represents professional recognition, verified competence, ethical accountability, and continuous professional development within the global accounting and finance community.</p>
+                    <p class="mb-4">AAA membership is not merely an enrollment — it is a professional affiliation that signifies a commitment to high standards of technical competence, integrity, lifelong learning, and responsible professional conduct.</p>
+                    <div class="bg-light p-4 rounded-4 border-start border-gold border-4">
+                        <p class="mb-0 italic text-dark-blue">"AAA operates a competency-based membership model, ensuring that every member level aligns with defined professional capability standards rather than only academic credentials."</p>
                     </div>
                 </div>
-                <div class="col-lg-4 text-center">
-                    <div class="p-4 rounded-4 bg-light h-100 shadow-sm transition-hover">
-                        <i class="fa-solid fa-graduation-cap fs-1 text-gold mb-3"></i>
-                        <h4>CPE Credit Hub</h4>
-                        <p class="text-muted">Direct access to high-quality Continuing Professional Education (CPE) credits at discounted rates.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 text-center">
-                    <div class="p-4 rounded-4 bg-light h-100 shadow-sm transition-hover">
-                        <i class="fa-solid fa-handshake fs-1 text-gold mb-3"></i>
-                        <h4>Global Networking</h4>
-                        <p class="text-muted">Connect with 50,000+ members through regional meetings, sections, and professional interest groups.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Detailed Tiers -->
-    <section id="tiers" class="tiers-detailed py-5" style="background: var(--bg-off-white);">
-        <div class="container py-5">
-            <div class="section-title">
-                <h2>Choose Your Path</h2>
-                <p>Tailored membership options for every stage of your career.</p>
-            </div>
-            <div class="row g-4 mt-2">
-                <!-- Academic -->
-                <div class="col-lg-4">
-                    <div class="card h-100 border-0 shadow-sm overflow-hidden rounded-4">
-                        <div class="p-5 text-center bg-navy text-white" style="background: var(--primary-navy);">
-                            <h3 class="fw-bold">Academic</h3>
-                            <div class="display-5 fw-bold text-gold my-3">$195</div>
-                            <small class="opacity-75 text-uppercase letter-spacing-1">Annual Membership</small>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="recognized-traits ms-lg-5">
+                        <h4 class="mb-4 fw-bold">AAA members are recognized as professionals who:</h4>
+                        <div class="trait-item">
+                            <i class="fa-solid fa-user-check"></i>
+                            <span>Demonstrate verified educational and professional qualifications</span>
                         </div>
-                        <div class="p-4 p-xl-5">
-                            <ul class="list-unstyled mb-5">
-                                <li class="mb-3 d-flex gap-3"><i class="fa-solid fa-check text-success"></i> <span>Academic Placement Service</span></li>
-                                <li class="mb-3 d-flex gap-3"><i class="fa-solid fa-check text-success"></i> <span>17 Digital Journal Subscriptions</span></li>
-                                <li class="mb-3 d-flex gap-3"><i class="fa-solid fa-check text-success"></i> <span>Section & Region Membership</span></li>
-                                <li class="mb-3 d-flex gap-3"><i class="fa-solid fa-check text-success"></i> <span>Faculty Research Grants</span></li>
-                            </ul>
-                            <a href="#" class="btn-premium btn-outline-gold w-100 py-3">Apply as Faculty</a>
+                        <div class="trait-item">
+                            <i class="fa-solid fa-scale-balanced"></i>
+                            <span>Commit to ethical standards and public interest responsibility</span>
                         </div>
-                    </div>
-                </div>
-                <!-- Professional -->
-                <div class="col-lg-4">
-                    <div class="card h-100 border-0 shadow-lg overflow-hidden rounded-4" style="transform: scale(1.05); z-index: 2; border: 2px solid var(--accent-gold) !important;">
-                        <div class="position-absolute top-0 end-0 bg-gold px-3 py-1 fw-bold small text-navy">MOST POPULAR</div>
-                        <div class="p-5 text-center bg-navy text-white" style="background: var(--primary-navy);">
-                            <h3 class="fw-bold">Professional</h3>
-                            <div class="display-5 fw-bold text-gold my-3">$295</div>
-                            <small class="opacity-75 text-uppercase letter-spacing-1">Annual Membership</small>
+                        <div class="trait-item">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <span>Maintain continuous professional development (CPD)</span>
                         </div>
-                        <div class="p-4 p-xl-5">
-                            <ul class="list-unstyled mb-5">
-                                <li class="mb-3 d-flex gap-3"><i class="fa-solid fa-check text-success"></i> <span>Executive Resume Review</span></li>
-                                <li class="mb-3 d-flex gap-3"><i class="fa-solid fa-check text-success"></i> <span>Full CPE Credit Access</span></li>
-                                <li class="mb-3 d-flex gap-3"><i class="fa-solid fa-check text-success"></i> <span>Industry Advocacy Support</span></li>
-                                <li class="mb-3 d-flex gap-3"><i class="fa-solid fa-check text-success"></i> <span>Professional Career Coach</span></li>
-                                <li class="mb-3 d-flex gap-3"><i class="fa-solid fa-check text-success"></i> <span>Annual Convention Pass</span></li>
-                            </ul>
-                            <a href="#" class="btn-premium btn-gold w-100 py-3">Apply as Professional</a>
+                        <div class="trait-item">
+                            <i class="fa-solid fa-shield-halved"></i>
+                            <span>Adhere to professional governance and accountability</span>
                         </div>
-                    </div>
-                </div>
-                <!-- Student -->
-                <div class="col-lg-4">
-                    <div class="card h-100 border-0 shadow-sm overflow-hidden rounded-4">
-                        <div class="p-5 text-center bg-navy text-white" style="background: var(--primary-navy);">
-                            <h3 class="fw-bold">Student</h3>
-                            <div class="display-5 fw-bold text-gold my-3">$50</div>
-                            <small class="opacity-75 text-uppercase letter-spacing-1">Annual Membership</small>
-                        </div>
-                        <div class="p-4 p-xl-5">
-                            <ul class="list-unstyled mb-5">
-                                <li class="mb-3 d-flex gap-3"><i class="fa-solid fa-check text-success"></i> <span>Career Center Exclusive Access</span></li>
-                                <li class="mb-3 d-flex gap-3"><i class="fa-solid fa-check text-success"></i> <span>Scholarship & Travel Grants</span></li>
-                                <li class="mb-3 d-flex gap-3"><i class="fa-solid fa-check text-success"></i> <span>Student Case Competitions</span></li>
-                                <li class="mb-3 d-flex gap-3"><i class="fa-solid fa-check text-success"></i> <span>Digital Learning Library</span></li>
-                            </ul>
-                            <a href="#" class="btn-premium btn-outline-gold w-100 py-3">Apply as Student</a>
+                        <div class="trait-item">
+                            <i class="fa-solid fa-users-gear"></i>
+                            <span>Engage actively in professional advancement and community</span>
                         </div>
                     </div>
                 </div>
@@ -168,170 +123,204 @@
         </div>
     </section>
 
-    <!-- Membership Process Section -->
-    <section class="process py-5">
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-5 bg-off-white">
         <div class="container py-5">
-            <div class="section-title">
+            <div class="section-title text-center" data-aos="fade-up">
+                <span class="text-gold fw-bold text-uppercase letter-spacing-1 mb-2 d-block">Exclusive Advantages</span>
+                <h2>Membership Benefits</h2>
+                <p class="lead text-muted mx-auto" style="max-width: 700px;">AAA delivers tangible, professional, and long-term value to its members.</p>
+            </div>
+
+            <div class="bento-grid">
+                <!-- 1. Recognition (Featured) -->
+                <div class="benefit-card-bento featured" data-aos="fade-up">
+                    <span class="benefit-tag">Core Value</span>
+                    <div class="benefit-content">
+                        <div class="benefit-icon-wrapper"><i class="fa-solid fa-id-card"></i></div>
+                        <h4>Recognition & Credibility</h4>
+                        <p>Authorized use of AAA professional designations and global verification through our elite member directory and public portal.</p>
+                        <ul class="benefit-list-bento">
+                            <li><i class="fa-solid fa-check"></i> Professional Designation Rights</li>
+                            <li><i class="fa-solid fa-check"></i> Digital Verifiable Certificate</li>
+                            <li><i class="fa-solid fa-check"></i> Employer Verification Portal</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 2. Career Development (Wide) -->
+                <div class="benefit-card-bento wide" data-aos="fade-up" data-aos-delay="100">
+                    <div class="benefit-content text-start">
+                        <div class="d-flex align-items-center gap-4">
+                            <div class="benefit-icon-wrapper mb-0"><i class="fa-solid fa-route"></i></div>
+                            <div>
+                                <h4 class="mb-1">Career Development</h4>
+                                <p class="mb-0">Personalized roadmaps and leadership readiness benchmarking for rapid career advancement.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. CPD -->
+                <div class="benefit-card-bento" data-aos="fade-up" data-aos-delay="200">
+                    <div class="benefit-icon-wrapper"><i class="fa-solid fa-brain"></i></div>
+                    <h4>CPD Hub</h4>
+                    <p>Access specialized learning tracks and global workshops.</p>
+                </div>
+
+                <!-- 4. Knowledge -->
+                <div class="benefit-card-bento" data-aos="fade-up" data-aos-delay="300">
+                    <div class="benefit-icon-wrapper"><i class="fa-solid fa-book-bookmark"></i></div>
+                    <h4>Research</h4>
+                    <p>Exclusive regulatory updates and white papers.</p>
+                </div>
+
+                <!-- 5. Networking (Wide) -->
+                <div class="benefit-card-bento wide" data-aos="fade-up" data-aos-delay="400">
+                    <div class="row align-items-center h-100">
+                        <div class="col-md-7">
+                            <h4>Global Networking</h4>
+                            <p>Connect with a worldwide community through local chapters and international conferences.</p>
+                        </div>
+                        <div class="col-md-5 text-end">
+                            <div class="benefit-icon-wrapper ms-auto"><i class="fa-solid fa-globe"></i></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6. Ethics -->
+                <div class="benefit-card-bento" data-aos="fade-up" data-aos-delay="500">
+                    <div class="benefit-icon-wrapper"><i class="fa-solid fa-handshake-angle"></i></div>
+                    <h4>Ethics</h4>
+                    <p>Expert advisory and professional conduct support.</p>
+                </div>
+
+                <!-- 7. Digital -->
+                <div class="benefit-card-bento" data-aos="fade-up" data-aos-delay="600">
+                    <div class="benefit-icon-wrapper"><i class="fa-solid fa-display"></i></div>
+                    <h4>Digital Services</h4>
+                    <p>Seamless portal access and digital badge verification.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+        <div class="tier-highlight-banner" data-aos="zoom-in">
+            <div class="row align-items-center px-4">
+                <div class="col-lg-4 border-end border-white-50 tier-item">
+                    <h3>Associate Member</h3>
+                    <p>Foundation for aspiring professionals and students.</p>
+                    <a href="#" class="btn-premium btn-outline-gold mt-2">Explore</a>
+                </div>
+                <div class="col-lg-4 border-end border-white-50 tier-item">
+                    <h3>Professional Member</h3>
+                    <p>Standard for certified practicing accountants.</p>
+                    <a href="#" class="btn-premium btn-outline-gold mt-2">Explore</a>
+                </div>
+                <div class="col-lg-4 tier-item">
+                    <h3>Senior Professional</h3>
+                    <p>Elite recognition for established leaders and academics.</p>
+                    <a href="#" class="btn-premium btn-outline-gold mt-2">Explore</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="py-5">
+        <div class="container py-5">
+            <div class="section-title text-center" data-aos="fade-up">
+                <span class="text-gold fw-bold text-uppercase letter-spacing-1 mb-2 d-block">Pathway to Admission</span>
                 <h2>Membership Process</h2>
-                <p>Joining our elite community is a seamless three-step journey.</p>
+                <p class="lead text-muted mx-auto" style="max-width: 700px;">AAA follows a structured, transparent, and professionally governed membership admission process.</p>
             </div>
-            <div class="row text-center mt-5">
-                <div class="col-md-4">
-                    <div class="process-step">
-                        <div class="step-number">1</div>
-                        <h5>Select Your Tier</h5>
-                        <p class="text-muted px-lg-4">Choose the membership level that best aligns with your professional standing.</p>
+
+            <div class="process-timeline mx-auto" style="max-width: 900px;">
+                <!-- Step 1 -->
+                <div class="process-step-vertical" data-aos="fade-up">
+                    <div class="step-num-circle">1</div>
+                    <div class="step-content-box">
+                        <h5>Step 1 – Online Application</h5>
+                        <p class="small text-muted mb-3">Applicants provide comprehensive details through our professional portal:</p>
+                        <ul>
+                            <li><i class="fa-solid fa-circle-check"></i> Personal & Educational</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Prof. Qualifications</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Career Experience</li>
+                            <li><i class="fa-solid fa-circle-check"></i> CPD Records</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="process-step">
-                        <div class="step-number">2</div>
-                        <h5>Complete Application</h5>
-                        <p class="text-muted px-lg-4">Provide your professional details through our secure digital application portal.</p>
+
+                <!-- Step 2 -->
+                <div class="process-step-vertical" data-aos="fade-up">
+                    <div class="step-num-circle">2</div>
+                    <div class="step-content-box">
+                        <h5>Step 2 – Eligibility Review</h5>
+                        <p class="small text-muted mb-0">AAA reviews academic background, professional exposure, and ethical standing to ensure alignment with our high standards.</p>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="process-step">
-                        <div class="step-number">3</div>
-                        <h5>Global Access</h5>
-                        <p class="text-muted px-lg-4">Once verified, instantly unlock exclusive resources and international networking.</p>
+
+                <!-- Step 3 -->
+                <div class="process-step-vertical" data-aos="fade-up">
+                    <div class="step-num-circle">3</div>
+                    <div class="step-content-box">
+                        <h5>Step 3 – Verification & Assessment</h5>
+                        <p class="small text-muted mb-3">Rigorous verification of credentials to maintain the integrity of our member registry:</p>
+                        <ul>
+                            <li><i class="fa-solid fa-circle-check"></i> Credential Checks</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Employer Verification</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Prof. References</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Competency Audit</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="process-step-vertical" data-aos="fade-up">
+                    <div class="step-num-circle">4</div>
+                    <div class="step-content-box">
+                        <h5>Step 4 – Committee Approval</h5>
+                        <p class="small text-muted mb-0">The Membership Committee performs a final review to confirm category eligibility and professional standing.</p>
+                    </div>
+                </div>
+
+                <!-- Step 5 -->
+                <div class="process-step-vertical" data-aos="fade-up">
+                    <div class="step-num-circle">5</div>
+                    <div class="step-content-box">
+                        <h5>Step 5 – Admission & Payment</h5>
+                        <p class="small text-muted mb-3">Upon approval, new members receive their official on-boarding package:</p>
+                        <ul>
+                            <li><i class="fa-solid fa-circle-check"></i> Digital Certificate</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Membership ID</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Portal Access</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Step 6 -->
+                <div class="process-step-vertical" data-aos="fade-up">
+                    <div class="step-num-circle">6</div>
+                    <div class="step-content-box">
+                        <h5>Step 6 – Ongoing Compliance</h5>
+                        <p class="small text-muted mb-0">Active status is maintained through annual CPD completion, ethical compliance adherence, and timely renewal.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Membership Form Section -->
-    <section class="membership-form-section py-5" id="join-form">
-        <div class="container py-5">
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <div class="participation-form">
-                        <div class="text-center mb-5">
-                            <h2 class="fw-bold">Member Application</h2>
-                            <p class="text-muted">Start your journey with the American Association of Accountants today.</p>
-                        </div>
-                        <form class="row g-4">
-                            <div class="col-md-6">
-                                <label class="form-label-premium">Full Name</label>
-                                <input type="text" class="form-control form-control-premium" placeholder="e.g. John Doe">
-                            </div>
-                            <div class="col-md-6">
-                                <label class="form-label-premium">Email Address</label>
-                                <input type="email" class="form-control form-control-premium" placeholder="e.g. john@example.com">
-                            </div>
-                            <div class="col-md-6">
-                                <label class="form-label-premium">Membership Tier</label>
-                                <select class="form-select form-control-premium">
-                                    <option selected>Select a Tier</option>
-                                    <option value="academic">Academic ($195)</option>
-                                    <option value="professional">Professional ($295)</option>
-                                    <option value="student">Student ($50)</option>
-                                </select>
-                            </div>
-                            <div class="col-md-6">
-                                <label class="form-label-premium">Professional Title</label>
-                                <input type="text" class="form-control form-control-premium" placeholder="e.g. Senior Auditor">
-                            </div>
-                            <div class="col-md-12">
-                                <label class="form-label-premium">Organization / University</label>
-                                <input type="text" class="form-control form-control-premium" placeholder="Enter your current affiliation">
-                            </div>
-                            <div class="col-md-12 mt-5">
-                                <button type="submit" class="btn-premium btn-gold w-100 py-3 fs-6">Submit Application</button>
-                                <p class="text-center mt-3 small text-muted">By submitting, you agree to our <a href="#" class="text-gold">Membership Terms</a> and <a href="#" class="text-gold">Privacy Policy</a>.</p>
-                            </div>
-                        </form>
-                    </div>
-                </div>
+    <!-- Final CTA Redesign -->
+    <section class="membership-cta-modern mt-5">
+        <div class="container" data-aos="zoom-in">
+            <span class="text-gold fw-bold text-uppercase letter-spacing-1 mb-3 d-block">Start Your Journey</span>
+            <h2 class="display-4 fw-bold text-white mb-4">Shape the Future of Accounting</h2>
+            <p class="lead opacity-75 mx-auto mb-5" style="max-width: 800px;">Join thousands of professionals worldwide who have chosen AAA as their partner for professional growth and international recognition.</p>
+            <div class="d-flex justify-content-center gap-4 flex-wrap">
+                <a href="#" class="btn-premium btn-gold btn-lg" data-bs-toggle="modal" data-bs-target="#membershipModal">Apply for Membership</a>
+                <a href="#" class="btn-premium btn-outline-gold btn-lg">Explore Categories</a>
             </div>
         </div>
     </section>
-
-    <!-- Membership Modal -->
-    <div class="modal fade" id="membershipModal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content border-0 rounded-4 overflow-hidden">
-                <div class="modal-header bg-navy text-white p-4 border-0">
-                    <h5 class="modal-title fw-bold">Member Application</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body p-5">
-                    <form class="row g-4">
-                        <div class="col-md-6">
-                            <label class="form-label-premium">Full Name</label>
-                            <input type="text" class="form-control form-control-premium" placeholder="e.g. John Doe">
-                        </div>
-                        <div class="col-md-6">
-                            <label class="form-label-premium">Email Address</label>
-                            <input type="email" class="form-control form-control-premium" placeholder="e.g. john@example.com">
-                        </div>
-                        <div class="col-md-6">
-                            <label class="form-label-premium">Membership Tier</label>
-                            <select class="form-select form-control-premium">
-                                <option selected>Select a Tier</option>
-                                <option value="academic">Academic ($195)</option>
-                                <option value="professional">Professional ($295)</option>
-                                <option value="student">Student ($50)</option>
-                            </select>
-                        </div>
-                        <div class="col-md-6">
-                            <label class="form-label-premium">Professional Title</label>
-                            <input type="text" class="form-control form-control-premium" placeholder="e.g. Senior Auditor">
-                        </div>
-                        <div class="col-md-12">
-                            <label class="form-label-premium">Organization / University</label>
-                            <input type="text" class="form-control form-control-premium" placeholder="Enter your current affiliation">
-                        </div>
-                        <div class="col-md-12 mt-5">
-                            <button type="submit" class="btn-premium btn-gold w-100 py-3 fs-6">Submit Application</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Contact Admissions Modal -->
-    <div class="modal fade" id="contactModal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content border-0 rounded-4 overflow-hidden">
-                <div class="modal-header bg-navy text-white p-4 border-0">
-                    <h5 class="modal-title fw-bold">Contact Admissions</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body p-5">
-                    <form class="row g-4">
-                        <div class="col-12">
-                            <label class="form-label-premium">Full Name</label>
-                            <input type="text" class="form-control form-control-premium" placeholder="Your Name">
-                        </div>
-                        <div class="col-12">
-                            <label class="form-label-premium">Email Address</label>
-                            <input type="email" class="form-control form-control-premium" placeholder="your@email.com">
-                        </div>
-                        <div class="col-12">
-                            <label class="form-label-premium">Subject</label>
-                            <select class="form-select form-control-premium">
-                                <option selected>Select inquiry type</option>
-                                <option value="cert">Certification Program</option>
-                                <option value="member">Membership Inquiry</option>
-                                <option value="event">Academic Events</option>
-                                <option value="other">Other</option>
-                            </select>
-                        </div>
-                        <div class="col-12">
-                            <label class="form-label-premium">Message</label>
-                            <textarea class="form-control form-control-premium py-3" rows="4" placeholder="How can we help you?" style="height: auto;"></textarea>
-                        </div>
-                        <div class="col-12 mt-4">
-                            <button type="submit" class="btn-premium btn-gold w-100 py-3">Send Message</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- Footer -->
     <footer>
@@ -350,9 +339,10 @@
                     <h5>Association</h5>
                     <ul>
                         <li><a href="./index.html">Home</a></li>
-                        <li><a href="./insights.html">Insights</a></li>
+                        <li><a href="./about.html">About Us</a></li>
+                        <li><a href="./objective.html">Objectives</a></li>
+                        <li><a href="./values.html">Core Values</a></li>
                         <li><a href="./membership.html">Membership</a></li>
-                        <li><a href="#">Certifications</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3 footer-links">
@@ -393,9 +383,53 @@
         </div>
     </footer>
 
+    <!-- Membership Modal -->
+    <div class="modal fade" id="membershipModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content border-0 rounded-4 overflow-hidden">
+                <div class="modal-header bg-navy text-white p-4 border-0">
+                    <h5 class="modal-title fw-bold">Member Application</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-5">
+                    <form class="row g-4">
+                        <div class="col-md-6">
+                            <label class="form-label-premium">Full Name</label>
+                            <input type="text" class="form-control form-control-premium" placeholder="e.g. John Doe">
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label-premium">Email Address</label>
+                            <input type="email" class="form-control form-control-premium" placeholder="e.g. john@example.com">
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label-premium">Membership Tier</label>
+                            <select class="form-select form-control-premium">
+                                <option selected>Select a Tier</option>
+                                <option value="academic">Associate Member</option>
+                                <option value="professional">Professional Member</option>
+                                <option value="student">Senior Professional Member</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label-premium">Professional Title</label>
+                            <input type="text" class="form-control form-control-premium" placeholder="e.g. Senior Auditor">
+                        </div>
+                        <div class="col-md-12">
+                            <label class="form-label-premium">Organization / University</label>
+                            <input type="text" class="form-control form-control-premium" placeholder="Enter your current affiliation">
+                        </div>
+                        <div class="col-md-12 mt-5">
+                            <button type="submit" class="btn-premium btn-gold w-100 py-3 fs-6">Submit Application</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
+    
     <!-- GSAP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>

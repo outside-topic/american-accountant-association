@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     start: 'top 80%',
                 },
                 y: 50,
-                opacity: 0,
+                opacity: 1,
                 duration: 1,
                 ease: 'power3.out'
             });
@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     start: 'top 70%',
                 },
                 y: 60,
-                opacity: 0,
+                opacity: 1,
                 duration: 1,
                 stagger: 0.2,
                 ease: 'power3.out'
@@ -90,4 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // About Section Specific: Mini Cards Stagger
+    
 });

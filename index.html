@@ -35,7 +35,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="#">AAA<span>.</span></a>
+            <a class="navbar-brand" href="./index.html">AAA<span>.</span></a>
             
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -43,13 +43,24 @@
             
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Membership</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Insights</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./objective.html">Objectives</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="./values.html">Core Values</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./membership.html">Membership</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Categories
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Associate Member</a></li>
+                            <li><a class="dropdown-item" href="#">Professional Member</a></li>
+                            <li><a class="dropdown-item" href="#">Senior Professional Member</a></li>
+                        </ul>
+                    </li>
                 </ul>
                 <div class="nav-btns d-flex gap-3">
                     <a href="#" class="btn-premium btn-outline-gold" data-bs-toggle="modal" data-bs-target="#membershipModal">Apply Now</a>
-                    <a href="./membership.html" class="btn-premium btn-gold">Join Today</a>
                 </div>
             </div>
         </div>
@@ -59,8 +70,8 @@
     <section id="hero-area">
         <div class="container">
             <div class="hero-content" data-aos="fade-up">
-                <h1>Elevating the Standards of <span>Accounting Excellence</span></h1>
-                <p>Join the premier global community of accounting professionals. Gain world-class certifications, access exclusive resources, and advance your career with the American Association of Accountants.</p>
+                <h1>American Association of Accountants <span>(AAA)</span> </h1>
+                <p>Advancing Professional Excellence, Ethical Leadership & Global Competence in Accounting</p>
                 <div class="hero-btns d-flex justify-content-center gap-4">
                     <a href="#certifications" class="btn-premium btn-gold">Explore Certifications</a>
                     <a href="#" class="btn-premium btn-outline-gold" data-bs-toggle="modal" data-bs-target="#membershipModal">Become a Member</a>
@@ -96,24 +107,85 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6">
-                    <div class="section-title text-start mb-4">
-                        <h2>Defining the Future of <br>Accounting Since 1916</h2>
+                    <div class="about-content" data-aos="fade-right">
+                        <div class="section-title text-start mb-4">
+                            <span class="text-gold fw-bold text-uppercase letter-spacing-1 mb-2 d-block">Welcome to AAA</span>
+                            <h2>The American Association <br>of Accountants</h2>
+                        </div>
+                        <p class="lead mb-4">The American Association of Accountants (AAA) is a professional membership organization dedicated to advancing the quality, credibility, and future-readiness of accounting and finance professionals worldwide.</p>
+                        <p class="mb-4">AAA serves as a professional platform that brings together accountants, auditors, financial analysts, controllers, consultants, academics, and business leaders committed to professional excellence, ethical conduct, and continuous development.</p>
+                        
+                        <div class="about-feature-box p-4 border-start border-gold border-4 bg-light mb-4">
+                            <p class="mb-0 italic text-dark-blue">"In today’s complex business environment—shaped by digital transformation, regulatory evolution, sustainability reporting, data analytics and globalization—the role of accounting professionals has expanded far beyond traditional bookkeeping."</p>
+                        </div>
+
+                        <p class="mb-5">Through structured membership pathways, competency frameworks, professional standards, and continuing professional development (CPD), AAA empowers professionals to build sustainable careers and meaningful professional impact.</p>
+                        
+                        
                     </div>
-                    <p class="lead mb-4">The American Association of Accountants is the largest community of accountants in academia and professional practice.</p>
-                    <p class="mb-4">Founded on the principles of integrity, excellence, and continuous learning, we provide the platform for accounting professionals to connect, grow, and lead in an ever-evolving financial landscape.</p>
-                    <ul class="mb-5">
-                        <li class="mb-2"><i class="fa-solid fa-check text-gold me-2"></i> World-class research and publications</li>
-                        <li class="mb-2"><i class="fa-solid fa-check text-gold me-2"></i> Global networking opportunities</li>
-                        <li class="mb-2"><i class="fa-solid fa-check text-gold me-2"></i> Industry-leading certification programs</li>
-                    </ul>
-                    <a href="#" class="btn-premium btn-gold">Learn More About AAA</a>
                 </div>
                 <div class="col-lg-6">
-                    <div class="about-image ms-lg-5">
-                        <img src="https://images.unsplash.com/photo-1577412647305-991150c7d163?q=80&w=2070&auto=format&fit=crop" class="img-fluid" alt="About AAA">
-                        <div class="about-badge">
-                            <span>100+ Years</span>
-                            <p class="mb-0">of Excellence</p>
+                    <div class="about-image-wrapper ps-lg-5" data-aos="fade-left">
+                        <div class="about-image">
+                            <img src="https://images.unsplash.com/photo-1554224154-26032ffc0d07?q=80&w=2026&auto=format&fit=crop" class="img-fluid rounded-4 shadow-lg" alt="About AAA">
+                            <div class="experience-badge animate-float">
+                                <span class="number">100+</span>
+                                <span class="text">Years Of <br>Professional <br>Excellence</span>
+                            </div>
+                        </div>
+                        <div class="about-mini-cards mt-4 d-grid gap-3">
+                            <div class="mini-card d-flex align-items-center gap-3 p-3 bg-white shadow-sm rounded-3">
+                                <div class="icon-circle bg-gold-soft py-2 px-3 rounded-circle"><i class="fa-solid fa-users-gear text-gold"></i></div>
+                                <div>
+                                    <h6 class="mb-0 fw-bold">Global Community</h6>
+                                    <p class="mb-0 small text-muted">A platform for accountants worldwide</p>
+                                </div>
+                            </div>
+                            <div class="mini-card d-flex align-items-center gap-3 p-3 bg-white shadow-sm rounded-3">
+                                <div class="icon-circle bg-gold-soft py-2 px-3 rounded-circle"><i class="fa-solid fa-certificate text-gold"></i></div>
+                                <div>
+                                    <h6 class="mb-0 fw-bold">Ethical Governance</h6>
+                                    <p class="mb-0 small text-muted">Ensuring trust and competence</p>
+                                </div>
+                            </div>
+
+
+                            
+                        </div>
+                        <div class="d-flex justify-content-center mt-5 w-100 lign-items-center gap-4">
+                            <a href="#" class="btn-premium btn-gold">Our Legacy</a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Welcome Members Section -->
+    <section id="welcome-banner" class="py-0">
+        <div class="welcome-container">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-8">
+                        <div class="welcome-text-content" data-aos="fade-up">
+                            <h2 class="display-5 fw-bold text-white mb-0">AAA welcomes members from all regions, industries, and career stages.</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="welcome-stats-mini d-flex flex-wrap gap-4 mt-lg-0 mt-4 justify-content-center" data-aos="fade-left">
+                            <div class="w-stat text-center">
+                                <div class="w-icon mb-2"><i class="fa-solid fa-earth-africa text-gold fs-3"></i></div>
+                                <span class="d-block text-white-50 small text-uppercase fw-bold">Global Presence</span>
+                            </div>
+                            <div class="w-stat text-center">
+                                <div class="w-icon mb-2"><i class="fa-solid fa-industry text-gold fs-3"></i></div>
+                                <span class="d-block text-white-50 small text-uppercase fw-bold">All Industries</span>
+                            </div>
+                            <div class="w-stat text-center">
+                                <div class="w-icon mb-2"><i class="fa-solid fa-user-graduate text-gold fs-3"></i></div>
+                                <span class="d-block text-white-50 small text-uppercase fw-bold">Every Stage</span>
+                            </div>
                         </div>
                     </div>
                 </div>
