@@ -18,34 +18,70 @@
 </head>
 <body>
 
-    <!-- Top Bar -->
+    <!-- Top Bar (Layer 1) -->
     <div class="topbar">
         <div class="container d-flex justify-content-between align-items-center">
-            <div class="topbar-info">
-                <span><i class="fa-solid fa-phone me-2"></i> +1 (800) AAA-INST</span>
-                <span class="ms-4"><i class="fa-solid fa-envelope me-2"></i> affiliation@aaaccountants.org</span>
+            <div class="topbar-info d-none d-lg-block">
+                <span><i class="fa-solid fa-phone me-2"></i> +1 (800) AAA-CONT</span>
+                <span class="ms-4"><i class="fa-solid fa-envelope me-2"></i> contact@aaaccountants.org</span>
             </div>
-            <div class="topbar-links">
-                <a href="#" class="text-white me-3">Institute Portal</a>
-                <a href="#" class="topbar_link">Member Verification <i class="fa-solid fa-arrow-right-long ms-1"></i></a>
+            <div class="topbar-nav d-flex flex-wrap align-items-center gap-3">
+                <a href="./about.html" class="text-white opacity-75 small">About Us</a>
+                <a href="./objective.html" class="text-white opacity-75 small">Objectives</a>
+                <a href="./values.html" class="text-white opacity-75 small">Core Values</a>
+                <a href="./resources.html" class="text-white opacity-75 small">Resources</a>
+                <div class="ms-3 border-start border-white border-opacity-25 ps-3">
+                    <a href="./contact.html" class="text-white opacity-75 small">Contacts</a>
+                </div>
             </div>
         </div>
     </div>
 
-    <!-- Navigation (Placeholder) -->
+    <!-- Main Navigation (Layer 2) -->
     <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="./index.html">AAA<span>.</span></a>
+            <a class="navbar-brand" href="./index.html">
+                <img class="nav-logo" src="./images/AAA LOGO.png" alt="">
+            </a>
+            
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+                    <!-- Membership Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Membership
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./membership.html">What is Membership</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="./associate-member.html">Associate Member</a></li>
+                            <li><a class="dropdown-item" href="./professional-member.html">Professional Member</a></li>
+                            <li><a class="dropdown-item" href="./senior-professional-member.html">Senior Professional Member</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Verification Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Verification
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./institute-verification.html">Institute Verification</a></li>
+                            <li><a class="dropdown-item" href="./member-verification.html">Member Verification</a></li>
+                        </ul>
+                    </li>
+
                     <li class="nav-item"><a class="nav-link" href="./affiliation.html">Affiliation</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./membership.html">Membership</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./resources.html">Resources</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./competency-framework.html">Competency</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./ethics-standards.html">Ethics & Standards</a></li>
                 </ul>
+                <div class="ms-lg-3">
+                    <a href="#" class="btn-premium btn-gold" data-bs-toggle="modal" data-bs-target="#membershipModal">Apply Now</a>
+                </div>
             </div>
         </div>
     </nav>
@@ -53,7 +89,7 @@
     <!-- Inner Hero -->
     <section class="inner-hero">
         <div class="container text-center">
-            <span class="badge bg-gold text-navy text-uppercase px-3 py-2 mb-3" data-aos="fade-down">Institutional Registry</span>
+            <span class="badge bg-gold text-white text-uppercase px-3 py-2 mb-3" data-aos="fade-down">Institutional Registry</span>
             <h1 data-aos="fade-up">Affiliate Institute Verification</h1>
             <p data-aos="fade-up" class="lead text-white opacity-75 mx-auto" style="max-width: 800px;">Verifying the accreditation and affiliation status of partner universities, academies, and corporate training providers.</p>
             <nav aria-label="breadcrumb">
@@ -133,16 +169,97 @@
         </div>
     </section>
 
+
     <!-- Footer -->
-    <footer>
-        <div class="container py-4 text-center">
-            <p class="opacity-50">&copy; 2026 American Association of Accountants. Institutional Registry Office.</p>
+    <footer class="footer-premium">
+        <div class="container">
+            <div class="row g-5">
+                <!-- Column 1: Brand & Identity -->
+                <div class="col-lg-4">
+                    <div class="footer-brand-side">
+                        <a href="./index.html" class="footer-logo text-center mb-4 d-inline-block"><img class="footer_logo mx-auto" src="./images/AAA LOGO.png" alt=""></a>
+                        <p class="mb-4 opacity-75">The American Association of Accountants is the premier global community dedicated to advancing professional excellence, ethical leadership, and future-readiness in the financial sector.</p>
+                        <div class="social-links-premium d-flex gap-3">
+                            <a href="#" class="social-item"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#" class="social-item"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#" class="social-item"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#" class="social-item"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 2: The Association -->
+                <div class="col-lg-2 col-md-4">
+                    <div class="footer-nav-col">
+                        <h5 class="footer-title">The Association</h5>
+                        <ul class="footer-links-list list-unstyled">
+                            <li><a href="./about.html">About AAA</a></li>
+                            <li><a href="./objective.html">Our Objectives</a></li>
+                            <li><a href="./values.html">Core Values</a></li>
+                            <li><a href="./ethics-standards.html">Ethics & Standards</a></li>
+                            <li><a href="./competency-framework.html">Competency Framework</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Column 3: Professional Hubs -->
+                <div class="col-lg-3 col-md-4">
+                    <div class="footer-nav-col">
+                        <h5 class="footer-title">Member Services</h5>
+                        <ul class="footer-links-list list-unstyled">
+                            <li><a href="./membership.html">Membership Portal</a></li>
+                            <li><a href="./affiliation.html">Institutional Affiliation</a></li>
+                            <li><a href="./resources.html">Resources & Career Hub</a></li>
+                            <li><a href="./member-verification.html">Member Registry</a></li>
+                            <li><a href="./institute-verification.html">Affiliate Registry</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Column 4: Reach Out -->
+                <div class="col-lg-3 col-md-4">
+                    <div class="footer-contact-col">
+                        <h5 class="footer-title">Get in Touch</h5>
+                        <div class="contact-mini-item d-flex gap-3 mb-3">
+                            <i class="fa-solid fa-location-dot text-gold mt-1"></i>
+                            <span class="small opacity-75">123 Professional Way,<br>Suite 500, New York, NY 10001</span>
+                        </div>
+                        <div class="contact-mini-item d-flex gap-3 mb-3">
+                            <i class="fa-solid fa-envelope text-gold mt-1"></i>
+                            <a href="mailto:support@aaaccountants.org" class="small opacity-75 text-decoration-none text-white">support@aaaccountants.org</a>
+                        </div>
+                        <div class="contact-mini-item d-flex gap-3">
+                            <i class="fa-solid fa-phone text-gold mt-1"></i>
+                            <span class="small opacity-75">+1 (800) AAA-CONT</span>
+                        </div>
+                        <a href="./contact.html" class="btn btn-sm btn-outline-gold mt-4 w-100">Send Inquiry</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="footer-bottom-premium mt-5 pt-4 border-top border-white-10">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-center text-md-start">
+                        <p class="mb-0 small opacity-50">&copy; 2026 American Association of Accountants. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+                        <ul class="list-inline mb-0 small opacity-50">
+                            <li class="list-inline-item me-4"><a href="#" class="text-white text-decoration-none">Privacy Policy</a></li>
+                            <li class="list-inline-item me-4"><a href="#" class="text-white text-decoration-none">Terms of Service</a></li>
+                            <li class="list-inline-item"><a href="#" class="text-white text-decoration-none">Cookie Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
+
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/main.js"></script>
     <script>
         AOS.init({ duration: 1000, once: true });
         function verifyInst() {

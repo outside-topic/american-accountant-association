@@ -12,6 +12,25 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    // hover on nav items and show the dropdown menu
+    // this will be only work for desktop media query 991px
+    
+    
+    if(window.innerWidth > 991){
+        const dropdown = document.querySelectorAll('.nav-item.dropdown');
+        dropdown.forEach(item => {
+            item.addEventListener('mouseover', () => {
+                item.classList.add('show');
+                item.querySelector('.dropdown-toggle').classList.add('show');
+                item.querySelector('.dropdown-menu').classList.add('show');
+            });
+            item.addEventListener('mouseout', () => {
+                item.classList.remove('show');
+                item.querySelector('.dropdown-toggle').classList.remove('show');
+                item.querySelector('.dropdown-menu').classList.remove('show');
+            });
+        });
+    }
     // Hero Animations
 
     const heroTl = gsap.timeline();
@@ -41,18 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const sectionTitle = section.querySelector('.section-title');
         const contentItems = section.querySelectorAll('.row > div');
 
-        if (sectionTitle) {
-            gsap.from(sectionTitle, {
-                scrollTrigger: {
-                    trigger: sectionTitle,
-                    start: 'top 80%',
-                },
-                y: 50,
-                opacity: 1,
-                duration: 1,
-                ease: 'power3.out'
-            });
-        }
+        
 
         if (contentItems.length > 0) {
             gsap.from(contentItems, {

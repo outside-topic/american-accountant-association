@@ -14,6 +14,7 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
 </head>
 
 <body>
@@ -25,13 +26,13 @@
                 <span><i class="fa-solid fa-phone me-2"></i> +1 (800) AAA-CONT</span>
                 <span class="ms-4"><i class="fa-solid fa-envelope me-2"></i> contact@aaaccountants.org</span>
             </div>
-            <div class="topbar-nav d-flex align-items-center gap-3">
+            <div class="topbar-nav d-flex flex-wrap align-items-center gap-3">
                 <a href="./about.html" class="text-white opacity-75 small">About Us</a>
                 <a href="./objective.html" class="text-white opacity-75 small">Objectives</a>
                 <a href="./values.html" class="text-white opacity-75 small">Core Values</a>
-                <a href="./ethics-standards.html" class="text-white opacity-75 small">Resources</a>
+                <a href="./resources.html" class="text-white opacity-75 small">Resources</a>
                 <div class="ms-3 border-start border-white border-opacity-25 ps-3">
-                    <a href="#" class="text-gold fw-bold small">Contacts</a>
+                    <a href="./contact.html" class="text-white opacity-75 small">Contacts</a>
                 </div>
             </div>
         </div>
@@ -40,7 +41,9 @@
     <!-- Main Navigation (Layer 2) -->
     <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="./index.html">AAA<span>.</span></a>
+            <a class="navbar-brand" href="./index.html">
+                <img class="nav-logo" src="./images/AAA LOGO.png" alt="">
+            </a>
             
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -75,7 +78,7 @@
 
                     <li class="nav-item"><a class="nav-link" href="./affiliation.html">Affiliation</a></li>
                     <li class="nav-item"><a class="nav-link" href="./competency-framework.html">Competency</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./resources.html">Ethics & Standards</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./ethics-standards.html">Ethics & Standards</a></li>
                 </ul>
                 <div class="ms-lg-3">
                     <a href="#" class="btn-premium btn-gold" data-bs-toggle="modal" data-bs-target="#membershipModal">Apply Now</a>
@@ -90,7 +93,7 @@
             <div class="hero-content" data-aos="fade-up">
                 <h1>American Association of Accountants <span>(AAA)</span> </h1>
                 <p>Advancing Professional Excellence, Ethical Leadership & Global Competence in Accounting</p>
-                <div class="hero-btns d-flex justify-content-center gap-4">
+                <div class="hero-btns d-flex flex-wrap justify-content-center gap-4">
                     <a href="#certifications" class="btn-premium btn-gold">Explore Certifications</a>
                     <a href="#" class="btn-premium btn-outline-gold" data-bs-toggle="modal" data-bs-target="#membershipModal">Become a Member</a>
                 </div>
@@ -146,20 +149,17 @@
                     <div class="about-image-wrapper ps-lg-5" data-aos="fade-left">
                         <div class="about-image">
                             <img src="https://images.unsplash.com/photo-1554224154-26032ffc0d07?q=80&w=2026&auto=format&fit=crop" class="img-fluid rounded-4 shadow-lg" alt="About AAA">
-                            <div class="experience-badge animate-float">
-                                <span class="number">100+</span>
-                                <span class="text">Years Of <br>Professional <br>Excellence</span>
-                            </div>
+                            
                         </div>
-                        <div class="about-mini-cards mt-4 d-grid gap-3">
-                            <div class="mini-card d-flex align-items-center gap-3 p-3 bg-white shadow-sm rounded-3">
+                        <div class="about-mini-cards mt-4 d-flex flex-wrap gap-3">
+                            <div class="mini-card d-flex flex-wrap align-items-center gap-3 p-3 bg-white shadow-sm rounded-3">
                                 <div class="icon-circle bg-gold-soft py-2 px-3 rounded-circle"><i class="fa-solid fa-users-gear text-gold"></i></div>
                                 <div>
                                     <h6 class="mb-0 fw-bold">Global Community</h6>
                                     <p class="mb-0 small text-muted">A platform for accountants worldwide</p>
                                 </div>
                             </div>
-                            <div class="mini-card d-flex align-items-center gap-3 p-3 bg-white shadow-sm rounded-3">
+                            <div class="mini-card d-flex flex-wrap align-items-center gap-3 p-3 bg-white shadow-sm rounded-3">
                                 <div class="icon-circle bg-gold-soft py-2 px-3 rounded-circle"><i class="fa-solid fa-certificate text-gold"></i></div>
                                 <div>
                                     <h6 class="mb-0 fw-bold">Ethical Governance</h6>
@@ -187,7 +187,7 @@
                 <div class="row align-items-center">
                     <div class="col-lg-8">
                         <div class="welcome-text-content" data-aos="fade-up">
-                            <h2 class="display-5 fw-bold text-white mb-0">AAA welcomes members from all regions, industries, and career stages.</h2>
+                            <h2 class="display-5 fw-bold text-md-start text-center text-white mb-0">AAA welcomes members from all regions, industries, and career stages.</h2>
                         </div>
                     </div>
                     <div class="col-lg-4">
@@ -211,186 +211,209 @@
         </div>
     </section>
 
-    <!-- Certifications Section -->
+    <!-- Professional Recognition (Successor to Certifications) -->
     <section id="certifications">
         <div class="container">
             <div class="section-title">
-                <h2>Professional Certifications</h2>
-                <p>Advance your career with our globally recognized credentials.</p>
+                <span class="text-gold fw-bold text-uppercase letter-spacing-1 mb-2 d-block">Elite Designations</span>
+                <h2>Professional Recognition</h2>
+                <p>Triple-tier membership pathways recognizing global accounting competence.</p>
             </div>
             <div class="row g-4">
                 <div class="col-lg-4">
-                    <div class="cert-card">
-                        <div class="cert-icon"><i class="fa-solid fa-award"></i></div>
-                        <h3>Certified Public <br>Accountant (CPA)</h3>
-                        <p>The gold standard in accounting. Master complex financial regulations and elevate your professional status.</p>
-                        <a href="#" class="cert-link">View Program Details <i class="fa-solid fa-arrow-right"></i></a>
+                    <div class="cert-card text-center h-100">
+                        <div class="cert-icon mx-auto"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <h3 class="mb-3">Associate Member<br>(AAA-AM)</h3>
+                        <p class="text-muted mb-4 small">Foundation-level status for early-career professionals and students entering the accounting arena.</p>
+                        <hr class="w-25 mx-auto mb-4">
+                        <ul class="list-unstyled text-start small mb-4">
+                            <li class="mb-2"><i class="fa-solid fa-check text-gold me-2"></i> Technical Foundation</li>
+                            <li class="mb-2"><i class="fa-solid fa-check text-gold me-2"></i> Academic Recognition</li>
+                            <li><i class="fa-solid fa-check text-gold me-2"></i> Professional Exposure</li>
+                        </ul>
+                        <a href="./associate-member.html" class="cert-link">Tier Details <i class="fa-solid fa-arrow-right ms-1"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="cert-card">
-                        <div class="cert-icon"><i class="fa-solid fa-chart-line"></i></div>
-                        <h3>Certified Management <br>Accountant (CMA)</h3>
-                        <p>Bridge the gap between accounting and strategic management. Drive business performance through financial insight.</p>
-                        <a href="#" class="cert-link">View Program Details <i class="fa-solid fa-arrow-right"></i></a>
+                    <div class="cert-card text-center h-100 border-gold shadow-sm">
+                        <div class="cert-icon mx-auto"><i class="fa-solid fa-user-check"></i></div>
+                        <h3 class="mb-3">Professional Member<br>(AAA-PM)</h3>
+                        <p class="text-muted mb-4 small">Recognition of applied competence for practitioners with demonstrated technical mastery.</p>
+                        <hr class="w-25 mx-auto mb-4">
+                        <ul class="list-unstyled text-start small mb-4">
+                            <li class="mb-2"><i class="fa-solid fa-check text-gold me-2"></i> Competency Verification</li>
+                            <li class="mb-2"><i class="fa-solid fa-check text-gold me-2"></i> Ethical Accountability</li>
+                            <li><i class="fa-solid fa-check text-gold me-2"></i> Practice Leadership</li>
+                        </ul>
+                        <a href="./professional-member.html" class="cert-link">Tier Details <i class="fa-solid fa-arrow-right ms-1"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="cert-card">
-                        <div class="cert-icon"><i class="fa-solid fa-shield-halved"></i></div>
-                        <h3>Certified Internal <br>Auditor (CIA)</h3>
-                        <p>Become a trusted advisor. Master internal control and risk management in the modern corporate environment.</p>
-                        <a href="#" class="cert-link">View Program Details <i class="fa-solid fa-arrow-right"></i></a>
+                    <div class="cert-card text-center h-100">
+                        <div class="cert-icon mx-auto"><i class="fa-solid fa-crown"></i></div>
+                        <h3 class="mb-3">Senior Professional<br>(AAA-SPM)</h3>
+                        <p class="text-muted mb-4 small">Elite status for leaders, influencers, and decision-makers in the global finance ecosystem.</p>
+                        <hr class="w-25 mx-auto mb-4">
+                        <ul class="list-unstyled text-start small mb-4">
+                            <li class="mb-2"><i class="fa-solid fa-check text-gold me-2"></i> Strategic Leadership</li>
+                            <li class="mb-2"><i class="fa-solid fa-check text-gold me-2"></i> Governance Influence</li>
+                            <li><i class="fa-solid fa-check text-gold me-2"></i> Global Mentorship</li>
+                        </ul>
+                        <a href="./senior-professional-member.html" class="cert-link">Tier Details <i class="fa-solid fa-arrow-right ms-1"></i></a>
                     </div>
                 </div>
             </div>
             <div class="text-center mt-5">
-                <a href="#" class="btn-premium btn-outline-gold">Explore All Certifications</a>
+                <a href="./membership.html" class="btn-premium btn-outline-gold">Compare All Tiers</a>
             </div>
         </div>
     </section>
 
-    <!-- Why Choose Us Section -->
-    <section id="why-choose-us">
+    <!-- Why Choose AAA Section -->
+    <section id="why-choose-us" class="bg-off-white">
         <div class="container">
             <div class="section-title">
-                <h2>Why Choose AAA?</h2>
-                <p>Equipping you with the tools to excel in the global accounting arena.</p>
+                <span class="text-gold fw-bold text-uppercase letter-spacing-1 mb-2 d-block">The AAA Advantage</span>
+                <h2>Why Professionals Join AAA?</h2>
+                <p>Equipping you with the pillars of global accounting leadership.</p>
             </div>
             <div class="row g-4">
                 <div class="col-lg-3 col-md-6">
-                    <div class="why-card">
-                        <div class="why-icon"><i class="fa-solid fa-earth-americas"></i></div>
-                        <h4>Global Recognition</h4>
-                        <p>Our credentials are respected by top firms and universities worldwide.</p>
+                    <div class="why-card h-100">
+                        <div class="why-icon"><i class="fa-solid fa-globe"></i></div>
+                        <h4>Global Mobility</h4>
+                        <p class="small">Our designations are internationally benchmarked, ensuring your profile is recognized across borders and industries.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <div class="why-card">
-                        <div class="why-icon"><i class="fa-solid fa-lightbulb"></i></div>
-                        <h4>Expert Insights</h4>
-                        <p>Access cutting-edge research and journals from leading academics.</p>
+                    <div class="why-card h-100">
+                        <div class="why-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                        <h4>Verified Trust</h4>
+                        <p class="small">Every member undergoes rigorous competency assessment, maintaining the association's elite professional standing.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <div class="why-card">
-                        <div class="why-icon"><i class="fa-solid fa-users"></i></div>
-                        <h4>Rich Network</h4>
-                        <p>Join a community of 50,000+ passionate accounting professionals.</p>
+                    <div class="why-card h-100">
+                        <div class="why-icon"><i class="fa-solid fa-brain"></i></div>
+                        <h4>Future Readiness</h4>
+                        <p class="small">Focus on AI, ESG reporting, and data analytics ensures our members lead rather than follow in the digital age.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <div class="why-card">
-                        <div class="why-icon"><i class="fa-solid fa-rocket"></i></div>
-                        <h4>Career Growth</h4>
-                        <p>Personalized tools and advocacy to fast-track your professional journey.</p>
+                    <div class="why-card h-100">
+                        <div class="why-icon"><i class="fa-solid fa-users-viewfinder"></i></div>
+                        <h4>Elite Network</h4>
+                        <p class="small">Direct access to 50,000+ thought leaders, academics, and industry titans in the financial ecosystem.</p>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Verification & Registry Section (NEW) -->
+    <section id="verification-hub" class="py-5 bg-navy text-white">
+        <div class="container py-lg-5">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <span class="text-gold fw-bold text-uppercase letter-spacing-1 mb-2 d-block">Integrity Portal</span>
+                    <h2 class="text-white fw-bold mb-4">Professional Integrity & Registry</h2>
+                    <p class="opacity-75 mb-5">AAA maintains a transparent, public registry to protect the professional standing of its members and affiliated institutions. Instant validation ensures stakeholders can build trust with verified partners.</p>
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="p-4 bg-white-5 rounded-4 border border-white-10 text-center">
+                                <i class="fa-solid fa-user-shield text-gold fs-2 mb-3 d-block"></i>
+                                <h6 class="fw-bold text-white mb-3">Member Search</h6>
+                                <a href="./member-verification.html" class="btn btn-sm btn-outline-gold px-4">Verify Profile</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="p-4 bg-white-5 rounded-4 border border-white-10 text-center">
+                                <i class="fa-solid fa-building-circle-check text-gold fs-2 mb-3 d-block"></i>
+                                <h6 class="fw-bold text-white mb-3">Institute Search</h6>
+                                <a href="./institute-verification.html" class="btn btn-sm btn-outline-gold px-4">Verify Affiliate</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=2070&auto=format&fit=crop" class="img-fluid rounded-5 shadow-lg opacity-85" alt="Verification Hub">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Institutional Affiliation Section (NEW) -->
+    <section id="affiliation-preview" class="py-5 bg-white">
+        <div class="container py-lg-5">
+            <div class="row align-items-center flex-row-reverse g-5">
+                <div class="col-lg-6" data-aos="fade-left">
+                    <span class="text-gold fw-bold text-uppercase letter-spacing-1 mb-2 d-block">Partner With AAA</span>
+                    <h2 class="fw-bold mb-4">Institutional Affiliation Hub</h2>
+                    <p class="text-muted mb-4 lead">Recognizing elite educational and professional organizations that align with AAA’s global competency frameworks and ethical governance.</p>
+                    <ul class="list-unstyled mb-5">
+                        <li class="mb-3 d-flex gap-3"><i class="fa-solid fa-circle-check text-gold mt-1"></i> <span>Curriculum alignment with global standards</span></li>
+                        <li class="mb-3 d-flex gap-3"><i class="fa-solid fa-circle-check text-gold mt-1"></i> <span>Graduate employability enhancement</span></li>
+                        <li class="d-flex gap-3"><i class="fa-solid fa-circle-check text-gold mt-1"></i> <span>Faculty development & joint research</span></li>
+                    </ul>
+                    <a href="./affiliation.html" class="btn-premium btn-gold px-5">Explore Affiliation</a>
+                </div>
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="p-4 bg-off-white rounded-5">
+                        <img src="./images/123385.jpg" class="img-fluid rounded-4 shadow-sm" alt="Institutional Affiliation">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Hub Preview (NEW) -->
+    <section id="resources-preview" class="py-5 bg-off-white">
+        <div class="container py-lg-5">
+            <div class="section-title text-center mb-5" data-aos="fade-up">
+                <span class="text-gold fw-bold text-uppercase letter-spacing-1 mb-2 d-block">Knowledge Engine</span>
+                <h2 class="fw-bold">Resources & Career Hub</h2>
+                <p class="text-muted mx-auto mt-3" style="max-width: 800px;">Access a multi-dimensional ecosystem of professional materials, industry insights, and career tools.</p>
+            </div>
+            <div class="row g-3" data-aos="fade-up">
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="./resources.html" class="d-block p-4 bg-white rounded-4 border text-center text-navy hover-gold h-100">
+                        <i class="fa-solid fa-book-open text-gold fs-4 mb-2"></i>
+                        <h6 class="mb-0 fw-bold small">Technical Pubs</h6>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="./resources.html" class="d-block p-4 bg-white rounded-4 border text-center text-navy hover-gold h-100">
+                        <i class="fa-solid fa-magnifying-glass-chart text-gold fs-4 mb-2"></i>
+                        <h6 class="mb-0 fw-bold small">Research Insights</h6>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="./resources.html" class="d-block p-4 bg-white rounded-4 border text-center text-navy hover-gold h-100">
+                        <i class="fa-solid fa-laptop-file text-gold fs-4 mb-2"></i>
+                        <h6 class="mb-0 fw-bold small">Career Tools</h6>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="./resources.html" class="d-block p-4 bg-white rounded-4 border text-center text-navy hover-gold h-100">
+                        <i class="fa-solid fa-leaf text-gold fs-4 mb-2"></i>
+                        <h6 class="mb-0 fw-bold small">ESG Center</h6>
+                    </a>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="./resources.html" class="btn-premium btn-link text-navy fw-bold">View All 7 Resource Categories <i class="fa-solid fa-arrow-right ms-2"></i></a>
             </div>
         </div>
     </section>
 
     
-    <!-- Membership Section -->
-    <section id="membership">
-        <div class="container">
-            <div class="section-title">
-                <h2>Membership Community</h2>
-                <p>Connect with over 50,000 professionals globally.</p>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-4">
-                    <div class="member-card">
-                        <h3>Academic</h3>
-                        <div class="member-price">$195 <span>/ year</span></div>
-                        <ul class="member-features">
-                            <li><i class="fa-solid fa-circle-check"></i> 17 Journal Subscriptions</li>
-                            <li><i class="fa-solid fa-circle-check"></i> Academic Placement Service</li>
-                            <li><i class="fa-solid fa-circle-check"></i> Section/Region Memberships</li>
-                            <li><i class="fa-solid fa-circle-check"></i> Annual Meeting Discount</li>
-                        </ul>
-                        <a href="./membership.html" class="btn-premium btn-outline-gold w-100 mt-4">Join as Faculty</a>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="member-card" style="border-color: var(--accent-gold);">
-                        <h3>Professional</h3>
-                        <div class="member-price">$295 <span>/ year</span></div>
-                        <ul class="member-features">
-                            <li><i class="fa-solid fa-circle-check"></i> All Journal Access</li>
-                            <li><i class="fa-solid fa-circle-check"></i> CPE Credit Hub</li>
-                            <li><i class="fa-solid fa-circle-check"></i> Executive Networking</li>
-                            <li><i class="fa-solid fa-circle-check"></i> Career Advocacy Tools</li>
-                        </ul>
-                        <a href="./membership.html" class="btn-premium btn-gold w-100 mt-4">Join as Professional</a>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="member-card">
-                        <h3>Student</h3>
-                        <div class="member-price">$50 <span>/ year</span></div>
-                        <ul class="member-features">
-                            <li><i class="fa-solid fa-circle-check"></i> Career Center Access</li>
-                            <li><i class="fa-solid fa-circle-check"></i> Scholarship Opportunities</li>
-                            <li><i class="fa-solid fa-circle-check"></i> Digital Publications</li>
-                            <li><i class="fa-solid fa-circle-check"></i> Student Competitions</li>
-                        </ul>
-                        <a href="./membership.html" class="btn-premium btn-outline-gold w-100 mt-4">Join as Student</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Professional Insights Section -->
-    <section id="insights">
-        <div class="container">
-            <div class="section-title">
-                <h2>Professional Insights</h2>
-                <p>Stay informed with the latest research and industry updates.</p>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-4">
-                    <div class="news-card">
-                        <div class="news-img" style="background-image: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop');"></div>
-                        <div class="news-content">
-                            <span class="news-date">January 15, 2026</span>
-                            <h4>The Impact of AI on Auditing Standards: A 2026 Perspective</h4>
-                            <a href="./report-details.html" class="cert-link">Read Full Report <i class="fa-solid fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="news-card">
-                        <div class="news-img" style="background-image: url('https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?q=80&w=2070&auto=format&fit=crop');"></div>
-                        <div class="news-content">
-                            <span class="news-date">January 12, 2026</span>
-                            <h4>ESG Reporting: New Regulations for Global Corporations</h4>
-                            <a href="./report-details.html" class="cert-link">Read Full Report <i class="fa-solid fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="news-card">
-                        <div class="news-img" style="background-image: url('https://images.unsplash.com/photo-1454165833767-027eeef1596e?q=80&w=2070&auto=format&fit=crop');"></div>
-                        <div class="news-content">
-                            <span class="news-date">January 10, 2026</span>
-                            <h4>Future-Proofing Your Accounting Career in the Digital Age</h4>
-                            <a href="./report-details.html" class="cert-link">Read Full Report <i class="fa-solid fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Final CTA Section -->
     <div class="cta-section">
         <div class="container">
             <div class="cta-container text-center">
                 <h2>Ready to Elevate Your Career?</h2>
                 <p class="lead mb-5 opacity-75">Join thousands of successful professionals who have transformed their careers with the American Association of Accountants.</p>
-                <div class="d-flex justify-content-center gap-4">
+                <div class="d-flex flex-wrap justify-content-center gap-4">
                     <a href="#" class="btn-premium btn-gold" data-bs-toggle="modal" data-bs-target="#membershipModal">Get Started Now</a>
                     <a href="#" class="btn-premium btn-outline-gold text-white" data-bs-toggle="modal" data-bs-target="#contactModal">Contact Admissions</a>
                 </div>
@@ -399,61 +422,86 @@
     </div>
 
     <!-- Footer -->
-    <footer>
+    <footer class="footer-premium">
         <div class="container">
             <div class="row g-5">
+                <!-- Column 1: Brand & Identity -->
                 <div class="col-lg-4">
-                    <a href="./index.html" class="footer-logo">AAA<span>.</span></a>
-                    <p class="pe-lg-5" style="color: #A8B2D1 !important;">The American Association of Accountants is dedicated to being the premier community for thought leaders in accounting.</p>
-                    <div class="social-links d-flex gap-3 mt-4">
-                        <a href="#" class="btn-premium btn-outline-gold p-2 rounded-circle" style="width: 40px; height: 40px;"><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="#" class="btn-premium btn-outline-gold p-2 rounded-circle" style="width: 40px; height: 40px;"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="#" class="btn-premium btn-outline-gold p-2 rounded-circle" style="width: 40px; height: 40px;"><i class="fa-brands fa-facebook-f"></i></a>
+                    <div class="footer-brand-side">
+                        <a href="./index.html" class="footer-logo text-center mb-4 d-inline-block"><img class="footer_logo mx-auto" src="./images/AAA LOGO.png" alt=""></a>
+                        <p class="mb-4 opacity-75">The American Association of Accountants is the premier global community dedicated to advancing professional excellence, ethical leadership, and future-readiness in the financial sector.</p>
+                        <div class="social-links-premium d-flex gap-3">
+                            <a href="#" class="social-item"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#" class="social-item"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#" class="social-item"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#" class="social-item"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-2 footer-links">
-                    <h5>Association</h5>
-                    <ul>
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="./insights.html">Insights</a></li>
-                        <li><a href="./membership.html">Membership</a></li>
-                        <li><a href="#">Certifications</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 footer-links">
-                    <h5>Recent Research</h5>
-                    <div class="footer-recent-posts">
-                        <a href="./report-details.html" class="footer-post-item">
-                            <div class="footer-post-thumb">
-                                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop" alt="AI Impact">
-                            </div>
-                            <div class="footer-post-info">
-                                <h6>AI on Auditing Standards</h6>
-                                <span>Jan 15, 2026</span>
-                            </div>
-                        </a>
-                        <a href="./report-details.html" class="footer-post-item">
-                            <div class="footer-post-thumb">
-                                <img src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?q=80&w=2070&auto=format&fit=crop" alt="ESG">
-                            </div>
-                            <div class="footer-post-info">
-                                <h6>ESG Reporting Regulations</h6>
-                                <span>Jan 12, 2026</span>
-                            </div>
-                        </a>
+
+                <!-- Column 2: The Association -->
+                <div class="col-lg-2 col-md-4">
+                    <div class="footer-nav-col">
+                        <h5 class="footer-title">The Association</h5>
+                        <ul class="footer-links-list list-unstyled">
+                            <li><a href="./about.html">About AAA</a></li>
+                            <li><a href="./objective.html">Our Objectives</a></li>
+                            <li><a href="./values.html">Core Values</a></li>
+                            <li><a href="./ethics-standards.html">Ethics & Standards</a></li>
+                            <li><a href="./competency-framework.html">Competency Framework</a></li>
+                        </ul>
                     </div>
                 </div>
-                <div class="col-lg-3 footer-links">
-                    <h5>Newsletter</h5>
-                    <p class="small mb-4" style="color: #A8B2D1;">Subscribe for the latest industry updates.</p>
-                    <div class="input-group">
-                        <input type="text" class="form-control bg-transparent border-secondary text-white" placeholder="Email address">
-                        <button class="btn btn-gold" type="button">Join</button>
+
+                <!-- Column 3: Professional Hubs -->
+                <div class="col-lg-3 col-md-4">
+                    <div class="footer-nav-col">
+                        <h5 class="footer-title">Member Services</h5>
+                        <ul class="footer-links-list list-unstyled">
+                            <li><a href="./membership.html">Membership Portal</a></li>
+                            <li><a href="./affiliation.html">Institutional Affiliation</a></li>
+                            <li><a href="./resources.html">Resources & Career Hub</a></li>
+                            <li><a href="./member-verification.html">Member Registry</a></li>
+                            <li><a href="./institute-verification.html">Affiliate Registry</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Column 4: Reach Out -->
+                <div class="col-lg-3 col-md-4">
+                    <div class="footer-contact-col">
+                        <h5 class="footer-title">Get in Touch</h5>
+                        <div class="contact-mini-item d-flex gap-3 mb-3">
+                            <i class="fa-solid fa-location-dot text-gold mt-1"></i>
+                            <span class="small opacity-75">123 Professional Way,<br>Suite 500, New York, NY 10001</span>
+                        </div>
+                        <div class="contact-mini-item d-flex gap-3 mb-3">
+                            <i class="fa-solid fa-envelope text-gold mt-1"></i>
+                            <a href="mailto:support@aaaccountants.org" class="small opacity-75 text-decoration-none text-white">support@aaaccountants.org</a>
+                        </div>
+                        <div class="contact-mini-item d-flex gap-3">
+                            <i class="fa-solid fa-phone text-gold mt-1"></i>
+                            <span class="small opacity-75">+1 (800) AAA-CONT</span>
+                        </div>
+                        <a href="./contact.html" class="btn btn-sm btn-outline-gold mt-4 w-100">Send Inquiry</a>
                     </div>
                 </div>
             </div>
-            <div class="footer-bottom text-center">
-                <p>&copy; 2026 American Association of Accountants. All Rights Reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+
+            <!-- Bottom Bar -->
+            <div class="footer-bottom-premium mt-5 pt-4 border-top border-white-10">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-center text-md-start">
+                        <p class="mb-0 small opacity-50">&copy; 2026 American Association of Accountants. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+                        <ul class="list-inline mb-0 small opacity-50">
+                            <li class="list-inline-item me-4"><a href="#" class="text-white text-decoration-none">Privacy Policy</a></li>
+                            <li class="list-inline-item me-4"><a href="#" class="text-white text-decoration-none">Terms of Service</a></li>
+                            <li class="list-inline-item"><a href="#" class="text-white text-decoration-none">Cookie Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>

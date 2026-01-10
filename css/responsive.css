@@ -1,0 +1,42 @@
+@media only screen and (max-width: 991px){
+    .nav-link{
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .about-content h2 {
+        font-size: 2rem;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .cta-container{
+        padding: 30px 20px;
+    }
+
+    .section-title h2, .section-title span{
+        text-align: center;
+    }
+
+    #about p{
+        text-align: center;
+    }
+
+    #about .about-feature-box p{
+        text-align: left !important;
+    }
+
+    .mini-card{
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 576px){
+    
+}
+
+@media only screen and (max-width: 340px){
+    
+}
