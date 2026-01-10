@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Institutional Verification | American Association of Accountants</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="topbar">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="topbar-info">
+                <span><i class="fa-solid fa-phone me-2"></i> +1 (800) AAA-INST</span>
+                <span class="ms-4"><i class="fa-solid fa-envelope me-2"></i> affiliation@aaaccountants.org</span>
+            </div>
+            <div class="topbar-links">
+                <a href="#" class="text-white me-3">Institute Portal</a>
+                <a href="#" class="topbar_link">Member Verification <i class="fa-solid fa-arrow-right-long ms-1"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation (Placeholder) -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">AAA<span>.</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./affiliation.html">Affiliation</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./membership.html">Membership</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./resources.html">Resources</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Inner Hero -->
+    <section class="inner-hero">
+        <div class="container text-center">
+            <span class="badge bg-gold text-navy text-uppercase px-3 py-2 mb-3" data-aos="fade-down">Institutional Registry</span>
+            <h1 data-aos="fade-up">Affiliate Institute Verification</h1>
+            <p data-aos="fade-up" class="lead text-white opacity-75 mx-auto" style="max-width: 800px;">Verifying the accreditation and affiliation status of partner universities, academies, and corporate training providers.</p>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb justify-content-center bg-transparent mt-4">
+                    <li class="breadcrumb-item"><a href="./index.html" class="text-gold">Home</a></li>
+                    <li class="breadcrumb-item"><a href="./affiliation.html" class="text-gold">Affiliation</a></li>
+                    <li class="breadcrumb-item active text-white" aria-current="page">Institute Verification</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Verification Search Section -->
+    <section class="py-5 bg-off-white">
+        <div class="container py-5">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h2 class="fw-bold mb-4">Validate Educational Partnerships</h2>
+                    <p class="text-muted mb-4">Before enrolling in programs or recognizing educational credits, ensure that the providing institution holds a valid and active affiliation with the American Association of Accountants.</p>
+                    <div class="d-flex align-items-start gap-3 mb-4">
+                        <div class="p-3 bg-white rounded-3 shadow-sm"><i class="fa-solid fa-bolt text-gold"></i></div>
+                        <div>
+                            <h6 class="fw-bold text-navy mb-1">Instant Results</h6>
+                            <p class="small text-muted mb-0">Our live database provides real-time confirmation of institutional standing.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start gap-3">
+                        <div class="p-3 bg-white rounded-3 shadow-sm"><i class="fa-solid fa-shield-check text-gold"></i></div>
+                        <div>
+                            <h6 class="fw-bold text-navy mb-1">Accreditation Details</h6>
+                            <p class="small text-muted mb-0">View the scope of programs covered under the current affiliation agreement.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="verification-card" data-aos="fade-left">
+                        <div class="mb-4">
+                            <label class="form-label text-navy fw-bold">Affiliation ID or Institution Name</label>
+                            <div class="verification-input-group">
+                                <input type="text" id="instInput" class="verification-input" placeholder="e.g., AAA-INST-GLOBAL-50">
+                                <button onclick="verifyInst()" class="btn-premium btn-gold px-4 rounded-3"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            </div>
+                        </div>
+                        
+                        <!-- Mock Result -->
+                        <div id="instResult" class="verification-result-box text-center">
+                            <i class="fa-solid fa-building-circle-check text-success display-4 mb-3"></i>
+                            <h4 class="fw-bold text-navy mb-1" id="instName">Oxford Management Academy</h4>
+                            <p class="text-gold fw-semibold mb-3">Global Tier Affiliate (AAA-GTA)</p>
+                            <div class="p-3 bg-white rounded-3 text-start small border">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span class="text-muted">Agreement Status:</span>
+                                    <span class="text-success fw-bold">Active & Valid</span>
+                                </div>
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span class="text-muted">Affiliation Score:</span>
+                                    <span class="text-navy fw-bold">98/100 (Excellent)</span>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <span class="text-muted">Renewal Date:</span>
+                                    <span class="text-navy fw-bold">Dec 2026</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Directory Link -->
+    <section class="py-5 bg-navy text-white text-center">
+        <div class="container py-4" data-aos="zoom-in">
+            <h3 class="fw-bold mb-4">Can't find your institution?</h3>
+            <p class="opacity-75 mb-5 mx-auto" style="max-width: 700px;">Browse our full global directory of affiliated universities and corporate partners to explore organizations by region or program type.</p>
+            <a href="#" class="btn-premium btn-outline-gold btn-lg px-5">View Full Global Directory</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container py-4 text-center">
+            <p class="opacity-50">&copy; 2026 American Association of Accountants. Institutional Registry Office.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+        function verifyInst() {
+            const val = document.getElementById('instInput').value;
+            const res = document.getElementById('instResult');
+            if(val.length > 3) {
+                res.style.display = 'block';
+                res.classList.add('animate__animated', 'animate__fadeInUp');
+            } else {
+                alert("Please enter a valid institution name or ID");
+            }
+        }
+    </script>
+</body>
+</html>

@@ -2584,3 +2584,104 @@ footer {
     background: var(--accent-gold);
     color: var(--bg-white);
 }
+
+/* Verification Page Styles */
+.verification-card {
+    background: var(--bg-white);
+    padding: 50px;
+    border-radius: 25px;
+    box-shadow: 0 40px 80px rgba(0,0,0,0.08);
+    border: 1px solid rgba(197, 168, 126, 0.1);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.verification-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 300px;
+    height: 300px;
+    background: rgba(197, 168, 126, 0.03);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.verification-input-group {
+    background: var(--bg-off-white);
+    padding: 10px;
+    border-radius: 15px;
+    display: flex;
+    gap: 10px;
+    border: 1px solid rgba(0,0,0,0.05);
+    transition: var(--transition-smooth);
+}
+
+.verification-input-group:focus-within {
+    border-color: var(--accent-gold);
+    background: var(--bg-white);
+    box-shadow: 0 10px 20px rgba(197, 168, 126, 0.1);
+}
+
+.verification-input {
+    border: none;
+    background: transparent;
+    padding: 15px 20px;
+    flex-grow: 1;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--primary-navy);
+    outline: none;
+}
+
+.verification-result-box {
+    margin-top: 40px;
+    padding: 30px;
+    border-radius: 20px;
+    background: #f8fafc;
+    border: 1px dashed rgba(197, 168, 126, 0.3);
+    display: none; /* Hidden by default, shown via JS mockup */
+}
+
+.status-badge {
+    padding: 10px 25px;
+    border-radius: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+}
+
+.status-verified {
+    background: rgba(39, 174, 96, 0.1);
+    color: #27ae60;
+}
+
+.verify-feature-card {
+    padding: 30px;
+    background: var(--bg-white);
+    border-radius: 20px;
+    height: 100%;
+    border: 1px solid rgba(197, 168, 126, 0.05);
+    transition: var(--transition-smooth);
+}
+
+.verify-feature-card:hover {
+    border-color: var(--accent-gold);
+    transform: translateY(-5px);
+}
+
+.verify-icon-circle {
+    width: 60px;
+    height: 60px;
+    background: var(--bg-navy);
+    color: var(--accent-gold);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
