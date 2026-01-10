@@ -11,6 +11,35 @@
         padding-bottom: 0;
     }
 
+    .inner-hero h1{
+        font-size: 2rem;
+    }
+
+    .lead{
+        text-align: center;
+    }
+
+    p{
+        text-align: center;
+    }
+
+    h4{
+        text-align: center;
+    }
+
+    .benefit-detailed-card .benefit-icon{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .process-step-vertical{
+        gap: 0;
+    }
+
+    .step-content-box{
+        margin-left: -10px;
+    }
+
     .cta-container{
         padding: 30px 20px;
     }
@@ -31,10 +60,17 @@
         justify-content: center;
         text-align: center;
     }
+
+    #global-impact p{
+        text-align: left !important;
+    }
+    
 }
 
 @media only screen and (max-width: 576px){
-    
+    .impact-visual-box{
+        padding: 20px 30px !important;
+    }
 }
 
 @media only screen and (max-width: 340px){
