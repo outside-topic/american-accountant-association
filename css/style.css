@@ -2852,3 +2852,70 @@ footer {
 .border-white-10 {
     border-color: rgba(255, 255, 255, 0.1) !important;
 }
+
+/* Global Impact Section */
+#global-impact {
+    background: #fff;
+    position: relative;
+}
+
+.impact-icon-small {
+    width: 60px;
+    height: 60px;
+    background: var(--bg-off-white);
+    color: var(--accent-gold);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+    transition: var(--transition-smooth);
+}
+
+.impact-item:hover .impact-icon-small {
+    background: var(--accent-gold);
+    color: var(--bg-white);
+    transform: scale(1.1);
+}
+
+.impact-visual-box {
+    box-shadow: 0 30px 60px rgba(5, 14, 29, 0.15);
+}
+
+.impact-bg-pattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(rgba(197, 168, 126, 0.1) 1px, transparent 1px);
+    background-size: 30px 30px;
+    opacity: 0.3;
+}
+
+.bg-white-10 {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.bg-gold-10 {
+    background: rgba(197, 168, 126, 0.1);
+}
+
+/* Responsive Centering Utility */
+@media (min-width: 768px) and (max-width: 991px) {
+    .row.justify-content-center > div {
+        text-align: center;
+    }
+    
+    .cert-card .list-unstyled {
+        display: inline-block;
+        max-width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .why-card {
+        padding: 40px 20px;
+    }
+}
