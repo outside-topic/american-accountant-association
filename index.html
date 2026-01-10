@@ -18,21 +18,26 @@
 
 <body>
 
-    <!-- Top Bar -->
+    <!-- Top Bar (Layer 1) -->
     <div class="topbar">
         <div class="container d-flex justify-content-between align-items-center">
-            <div class="topbar-info">
+            <div class="topbar-info d-none d-lg-block">
                 <span><i class="fa-solid fa-phone me-2"></i> +1 (800) AAA-CONT</span>
                 <span class="ms-4"><i class="fa-solid fa-envelope me-2"></i> contact@aaaccountants.org</span>
             </div>
-            <div class="topbar-links">
-                <a href="#" class="text-white me-3">Member Login</a>
-                <a href="#" class="topbar_link">Certification Verification <i class="fa-solid fa-arrow-right-long ms-1"></i></a>
+            <div class="topbar-nav d-flex align-items-center gap-3">
+                <a href="./about.html" class="text-white opacity-75 small">About Us</a>
+                <a href="./objective.html" class="text-white opacity-75 small">Objectives</a>
+                <a href="./values.html" class="text-white opacity-75 small">Core Values</a>
+                <a href="./ethics-standards.html" class="text-white opacity-75 small">Resources</a>
+                <div class="ms-3 border-start border-white border-opacity-25 ps-3">
+                    <a href="#" class="text-gold fw-bold small">Contacts</a>
+                </div>
             </div>
         </div>
     </div>
 
-    <!-- Navigation -->
+    <!-- Main Navigation (Layer 2) -->
     <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container">
             <a class="navbar-brand" href="./index.html">AAA<span>.</span></a>
@@ -43,29 +48,37 @@
             
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./about.html">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./objective.html">Objectives</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="./values.html">Core Values</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./membership.html">Membership</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./ethics-standards.html">Ethics & Standards</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./resources.html">Resources</a></li>
+                    <!-- Membership Dropdown -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Categories
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Membership
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="./competency-framework.html">Competency Framework</a></li>
-                            <li><a class="dropdown-item" href="./affiliation.html">Institutional Affiliation</a></li>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./membership.html">What is Membership</a></li>
                             <li><hr class="dropdown-divider"></li>
                             <li><a class="dropdown-item" href="./associate-member.html">Associate Member</a></li>
                             <li><a class="dropdown-item" href="./professional-member.html">Professional Member</a></li>
                             <li><a class="dropdown-item" href="./senior-professional-member.html">Senior Professional Member</a></li>
                         </ul>
                     </li>
+
+                    <!-- Verification Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Verification
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./institute-verification.html">Institute Verification</a></li>
+                            <li><a class="dropdown-item" href="./member-verification.html">Member Verification</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="./affiliation.html">Affiliation</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./competency-framework.html">Competency</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./resources.html">Ethics & Standards</a></li>
                 </ul>
-                <div class="nav-btns d-flex gap-3">
-                    <a href="#" class="btn-premium btn-outline-gold" data-bs-toggle="modal" data-bs-target="#membershipModal">Apply Now</a>
+                <div class="ms-lg-3">
+                    <a href="#" class="btn-premium btn-gold" data-bs-toggle="modal" data-bs-target="#membershipModal">Apply Now</a>
                 </div>
             </div>
         </div>

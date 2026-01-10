@@ -192,10 +192,21 @@ section {
     color: var(--text-white);
 }
 
+.topbar-nav a {
+    transition: var(--transition-smooth);
+    letter-spacing: 0.5px;
+    text-transform: capitalize;
+}
+
+.topbar-nav a:hover {
+    color: var(--accent-gold) !important;
+    opacity: 1 !important;
+}
+
 /* Navbar */
 .navbar {
     background: var(--bg-white);
-    padding: 20px 0;
+    padding: 12px 0;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03);
     transition: var(--transition-smooth);
     border: none !important;
@@ -216,7 +227,7 @@ section {
 .nav-link {
     color: var(--primary-navy) !important;
     font-weight: 600;
-    font-size: 0.9rem;
+    font-size: 13px;
     margin: 0 15px;
     position: relative;
     text-transform: uppercase;
