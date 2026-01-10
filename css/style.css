@@ -73,6 +73,10 @@ ul {
     gap: 10px;
 }
 
+.text-navy{
+    color: var(--primary-navy);
+}
+
 .btn-gold {
     background-color: var(--accent-gold);
     color: var(--primary-navy) !important;
