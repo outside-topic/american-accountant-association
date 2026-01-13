@@ -2929,3 +2929,146 @@ footer {
         padding: 40px 20px;
     }
 }
+/* Privacy Policy Page Styles (Redesigned) */
+.policy-header {
+    background: var(--bg-navy);
+}
+
+.intro-card {
+    transition: transform 0.3s ease;
+}
+
+.intro-card:hover {
+    transform: translateY(-5px);
+}
+
+.scope-card {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.scope-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
+}
+
+.info-collect-card {
+    transition: all 0.3s ease;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+}
+
+.info-collect-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+    border-color: var(--accent-gold) !important;
+}
+
+.sensitive-info-box {
+    background: rgba(197, 168, 126, 0.08);
+    border: 1px dashed var(--accent-gold) !important;
+}
+
+.policy-check-list li {
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+    color: #4a5568;
+    display: flex;
+    align-items: center;
+}
+
+.opacity-05 {
+    opacity: 0.05 !important;
+}
+
+.text-dark-blue {
+    color: #1a202c;
+}
+
+.usage-card {
+    transition: transform 0.3s ease;
+}
+
+.usage-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.06) !important;
+}
+
+.usage-card .policy-check-list li {
+    padding: 8px 0;
+    border-bottom: 1px dashed rgba(0,0,0,0.05);
+}
+
+.usage-card .policy-check-list li:last-child {
+    border-bottom: none;
+}
+
+.legal-card {
+    transition: transform 0.3s ease;
+}
+
+.legal-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05) !important;
+    border-color: var(--accent-gold) !important;
+}
+
+.sharing-box {
+    box-shadow: 0 10px 40px rgba(0,0,0,0.04) !important;
+}
+
+.sharing-box .bg-off-white:hover {
+    background: var(--bg-navy) !important;
+    color: #fff !important;
+}
+
+.sharing-box .bg-off-white:hover i,
+.sharing-box .bg-off-white:hover span {
+    color: #fff !important;
+    opacity: 1 !important;
+}
+
+.retention-card {
+    background: #fff;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.02);
+}
+
+.security-card {
+    transition: transform 0.3s ease;
+}
+
+.security-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.08) !important;
+}
+
+.policy-check-list li .fa-solid {
+    transition: transform 0.3s ease;
+}
+
+.retention-card li:hover .fa-solid {
+    transform: translateX(5px);
+}
+
+.rights-card {
+    transition: transform 0.3s ease;
+}
+
+.rights-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.06) !important;
+}
+
+.misc-policy-card {
+    transition: transform 0.3s ease;
+}
+
+.misc-policy-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05) !important;
+    border-color: var(--accent-gold) !important;
+}
+
+.mw-500 {
+    max-width: 500px;
+}
+
