@@ -3072,3 +3072,40 @@ footer {
     max-width: 500px;
 }
 
+/* START COOKIE POLICY STYLES */
+.cookie-card {
+    transition: transform 0.3s ease;
+}
+
+.cookie-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.06) !important;
+    border-color: var(--accent-gold) !important;
+}
+
+.cookie-management-box {
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+/* END COOKIE POLICY STYLES */
+
+/* START REFUND POLICY STYLES */
+.refund-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.refund-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.06) !important;
+    border-color: var(--accent-gold) !important;
+}
+
+.icon-box-sm {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+/* END REFUND POLICY STYLES */
+
